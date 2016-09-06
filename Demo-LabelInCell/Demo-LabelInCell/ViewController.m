@@ -73,6 +73,7 @@
 {
     NSString *text = _datasource[indexPath.row];
 
+    // 方法1：
     // 段落设置与实际显示的 Label 属性一致 采用 NSMutableParagraphStyle 设置Nib 中 Label 的相关属性传入到 NSAttributeString 中计算；
     NSMutableParagraphStyle *style = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
     style.lineBreakMode = NSLineBreakByWordWrapping;
@@ -85,6 +86,17 @@
     
     // 并不是高度计算不对，我估计是计算出来的数据是 小数，在应用到布局的时候稍微差一点点就不能保证按照计算时那样排列，所以为了确保布局按照我们计算的数据来，就在原来计算的基础上 取ceil值，再加1，测试 OK；
     CGFloat height = ceil(size.height) + 1;
+    
+    
+    // 方法2：
+    UILabel *label = [[UILabel alloc]init];
+    label.numberOfLines = 0;
+    label.lineBreakMode = NSLineBreakByWordWrapping;
+    label.textAlignment = NSTextAlignmentLeft;
+    label.text = text;
+    label.font = [UIFont systemFontOfSize:16];
+    CGSize labelSize = [label sizeThatFits:CGSizeMake(200.f, MAXFLOAT)];
+    height = ceil(labelSize.height) + 1;
     
     return height + 8+8+18+8;
 }
