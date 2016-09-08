@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  Demo-LabelInCell
 //
-//  Created by DanaChu on 16/9/6.
-//  Copyright © 2016年 DanaChu. All rights reserved.
+//  Created by DanaChu on 14/9/6.
+//  Copyright © 2014年 DanaChu. All rights reserved.
 //
 
 #import "AppDelegate.h"

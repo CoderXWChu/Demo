@@ -2,8 +2,8 @@
 //  FLRightChatTVCell.m
 //  funlive
 //
-//  Created by rckj on 16/9/6.
-//  Copyright © 2016年 renzhen. All rights reserved.
+//  Created by rckj on 14/9/6.
+//  Copyright © 2014年 renzhen. All rights reserved.
 //
 
 #import "FLRightChatTVCell.h"
