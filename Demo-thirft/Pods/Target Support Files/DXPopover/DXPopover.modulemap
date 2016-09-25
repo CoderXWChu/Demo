@@ -1,0 +1,6 @@
+framework module DXPopover {
+  umbrella header "DXPopover-umbrella.h"
+
+  export *
+  module * { export * }
+}

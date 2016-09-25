@@ -1,0 +1,8 @@
+EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/AFNetworking.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/DXPopover.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/DZNEmptyDataSet.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/FBRetainCycleDetector.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/MJRefresh.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/Masonry.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/PNChart.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/ReactiveCocoa.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/Result.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/UICountingLabel.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/thrift.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "AFNetworking" -framework "DXPopover" -framework "DZNEmptyDataSet" -framework "FBRetainCycleDetector" -framework "MJRefresh" -framework "Masonry" -framework "PNChart" -framework "ReactiveCocoa" -framework "Result" -framework "UICountingLabel" -framework "thrift"
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods
+PODS_ROOT = ${SRCROOT}/Pods

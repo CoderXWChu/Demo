@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JDMasterReportRankViewCellIdentifer" rowHeight="307" id="KGk-i7-Jjw" customClass="JDMasterReportRankViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="307"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="306.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8xL-8M-sgp">
+                        <rect key="frame" x="0.0" y="44" width="320" height="262.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="KGk-i7-Jjw" id="vwl-ju-cQa"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="7D1-8e-QWA"/>
+                        </connections>
+                    </tableView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2LD-a3-kKs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="FSI-mJ-Y4n"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="8xL-8M-sgp" secondAttribute="bottom" id="Eqc-sK-kUq"/>
+                    <constraint firstAttribute="trailing" secondItem="2LD-a3-kKs" secondAttribute="trailing" id="IW6-0p-Gxa"/>
+                    <constraint firstItem="8xL-8M-sgp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="JoH-i3-uin"/>
+                    <constraint firstItem="2LD-a3-kKs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="LwX-uH-3cW"/>
+                    <constraint firstAttribute="trailing" secondItem="8xL-8M-sgp" secondAttribute="trailing" id="WQf-kg-JyX"/>
+                    <constraint firstItem="8xL-8M-sgp" firstAttribute="top" secondItem="2LD-a3-kKs" secondAttribute="bottom" id="sly-eg-kei"/>
+                    <constraint firstItem="2LD-a3-kKs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="t11-Es-tng"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="selectContentView" destination="2LD-a3-kKs" id="Dn9-q4-L6w"/>
+                <outlet property="tableView" destination="8xL-8M-sgp" id="0xG-la-scw"/>
+            </connections>
+            <point key="canvasLocation" x="286" y="255.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,19 @@
+pod ’thrift’, ‘~> 0.9.3’
+pod 'MJRefresh', '~> 3.1.12'
+pod 'DZNEmptyDataSet'
+pod 'ReactiveCocoa', '~> 4.2.1'
+pod 'FBRetainCycleDetector', '~> 0.1.2'
+pod 'AFNetworking'
+pod 'PNChart', '~> 0.8.9'
+pod 'Masonry', '~> 1.0.1'
+pod 'DXPopover'
+
+use_frameworks!
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = '2.3'
+        end
+    end
+end
